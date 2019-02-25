@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> should be render and match the snapshot 1`] = `
+<div>
+  <Switch>
+    <Route
+      component={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "preload": [Function],
+          "render": [Function],
+        }
+      }
+      exact={true}
+      path="/"
+    />
+    <Route
+      component={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "preload": [Function],
+          "render": [Function],
+        }
+      }
+      exact={true}
+      path="/contact"
+    />
+    <Route
+      component={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "preload": [Function],
+          "render": [Function],
+        }
+      }
+      path="*"
+    />
+  </Switch>
+  <GlobalStyleComponent />
+</div>
+`;

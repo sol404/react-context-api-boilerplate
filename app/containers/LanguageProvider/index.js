@@ -1,14 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { IntlProvider } from 'react-intl';
-import { Context, Consumer } from './Context';
+import {
+  Context as ContextLanguageProvider,
+  Consumer as ConsumerLanguageProvider,
+} from './Context';
 
 export const LanguageProvider = props => {
   const { children, messages } = props;
 
   return (
-    <Context>
-      <Consumer>
+    <ContextLanguageProvider>
+      <ConsumerLanguageProvider>
         {ctx => (
           <IntlProvider
             locale={ctx.state.locale}
@@ -18,8 +21,8 @@ export const LanguageProvider = props => {
             {React.Children.only(children)}
           </IntlProvider>
         )}
-      </Consumer>
-    </Context>
+      </ConsumerLanguageProvider>
+    </ContextLanguageProvider>
   );
 };
 

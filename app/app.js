@@ -22,7 +22,7 @@ const MOUNT_NODE = document.getElementById('app');
 
 const render = messages => {
   ReactDOM.render(
-    <MuiThemeProvider theme={theme}>
+    <MuiThemeProvider theme={theme()}>
       <LanguageProvider messages={messages}>
         <Router>
           <App />
